@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box1{width: 300px;height: 300px;border: 2px black solid;margin: 30px auto;}
+    .box2{width: 100px;height: 100px;background-color: blue;transition: 1s;}
+    .box1:hover .box2{transform: rotate(45deg)}
+
+    .box3{width: 300px;height: 300px;border: 2px black solid;margin: 30px auto;}
+        .box4{width: 100px;height: 100px;background-color: blue;transition: 1s;}
+        .box3:hover .box4{transform: skew(45deg)}
+    </style>
+</head>
+<body>
+    <!-- 
+        translate 
+            rotate 旋转
+                单位是角度 deg
+                x 3d
+                y 3d
+                z 2d    和 rotate是等价 正顺时针 负值逆时针
+
+                
+
+            skew  斜切
+                x
+                y
+     -->
+     
+     <div class="box1">
+        <div class="box2"></div>
+    </div>
+    
+    <div class="box3">
+        <div class="box4"></div>
+    </div>
+
+</body>
+</html>

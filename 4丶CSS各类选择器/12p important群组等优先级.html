@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{color: red; }
+        *{color: seagreen  !important;background: springgreen;}
+
+        div.box{color: steelblue;}
+        .box{color: tomato;}
+    </style>
+</head>
+<body>
+    <!-- 
+        !important
+            提升样式优先级(最大，但无法提升继承的优先级)，非规范样式，不建议使用
+
+        标签+类与单类
+            标签+类的优先级大于单类优先级
+
+        群组优先级
+            群组选择器与单一选择器的优先级相同，靠后写的优先级高
+
+     -->
+     <div style="color: royalblue;background: slateblue;">hello word</div>
+     <div class="box">box</div>
+</body>
+</html>

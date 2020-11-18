@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /*  
+    M[attr]             M元素选择指定为attr属性的集合
+   
+    M[attr==value]      M元素选择指定为attr属性和value值的集合
+   
+    M[attr*=value]     M元素选择指定为attr属性并且包含值为value的集合
+    
+    M[attr^=value]      M元素选择指定为attr属性并且起始值为value的集合
+    
+    M[attr$=value]      M元素选择指定为attr属性并且结束值为value的集合
+    
+    M[attr1][attr2]     M元素选择满足多个属性的集合    
+    */
+    
+    div[class]{background: blue;}
+    /*指定div含有class属性的获得样式*/
+    
+    div[class=name]{background: brown;width: 600px;}
+    /*指定div，class属性值为name的获得样式*/
+   
+    div[class*=box]{font-style: italic;font-size: 20px;}
+    /*指定div class中含有box的获得样式*/
+
+    div[class^=box]{text-decoration: underline/*下划线*/;}
+    /*指定div class中 起始值为box的获得样式*/
+
+    div[class$=ppp]{text-decoration: overline/*上划线 */;}
+    /*指定div class中 结束值为ppp的获得样式*/
+
+    div[class][id]{text-decoration: line-through/*删除线*/;}
+    /*指定div 同时含有class  id的获得样式*/
+    </style>
+</head>
+<body>
+    <div>56465465</div>
+    <div class="name">56465465</div>
+    <div class="box">你真的好帅</div>
+    <div class="box-ppp">你好帅</div>
+</body>
+</html>

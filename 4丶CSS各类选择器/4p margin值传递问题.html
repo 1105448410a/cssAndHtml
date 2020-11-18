@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box1{width: 200px;height: 200px;background-color: seagreen;}
+        #box2{width: 100px;height: 100px;background-color: skyblue;margin-top: 100px;}
+
+        #box3{width: 200px;height: 200px;background-color: seagreen;border:1px black solid;margin-top: 60px;}
+        #box4{width: 100px;height: 100px;background-color: skyblue;margin-top: 100px;}
+
+        #box5{width: 200px;height: 100px;background-color: seagreen;padding-top: 100px;margin-top: 60px;}
+        #box6{width: 100px;height: 100px;background-color: skyblue;}
+    </style>
+</head>
+<body>
+    <!-- 
+        margin传递
+            margin传递的问题只会出现在嵌套的结构中，且只有margin-top会有传递问题，其他三个方向是没有传递问题的
+     -->
+
+     <div id="box1">
+            <div id="box2"></div>
+            <!-- 此时Box2的margin-top传递给了box1 -->
+     </div>
+
+     <div id="box3">
+        <div id="box4"></div>
+     </div>
+
+     <div id="box5">
+        <div id="box6"></div>
+     </div>
+
+     <!--
+        解决方案
+        1.BFC规范为题
+        2.给父容器加边框（只有偶尔适用）
+        3.子容器的margin换成父容器padding
+    -->
+</body>
+</html>

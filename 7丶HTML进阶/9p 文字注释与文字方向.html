@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{direction: rtl;unicode-bidi: bidi-override;}   
+        /* 方向与编码方式 */
+    </style>
+</head>
+<body>
+    <!-- 
+        文字注解
+            ruby rt 组合
+
+     -->
+    <ruby>
+        寒 <rt>hán</rt>
+    </ruby>
+    <p>
+        <bdo dir="rtl">一二三四五六七</bdo>
+        <!-- right to left -->
+    </p>
+    <p>
+        <span>一二三四五六七</span>
+    </p>
+
+</body>
+</html>

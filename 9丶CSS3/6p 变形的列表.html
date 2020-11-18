@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 基础样式修改 */
+        *{margin: 0; padding: 0px;}
+        ul{list-style:none;}
+        img{display: block;}
+
+        /* 基础格式 */
+        /* 列表总 */
+        .list{width: 250px; margin: 30px auto;}
+        /* 划分线 */
+        .list li{ height: 97px;border-bottom: black dashed;overflow: hidden;}
+        /* 图片 */
+        .list .list-p{ float: left;width: 112px;height: 77px;margin: 10px 9px 0 5px;position: relative;}
+
+
+
+        /* 鼠标移入样式边框 */
+        .list .list-p .list-p-box{
+            width: 92px;height: 42px;
+            border: 1px white solid;
+            position: absolute;left: 9px;top: 9px;
+            transform: translate(0,-90px) rotate(-90deg);
+            transition: 1s;
+            transform-origin: 0 0;
+            }
+        /* 鼠标移入文字 */
+        .list .list-p .list-p-text{ width: 100%;;color: white;text-align: center;bottom: 35px;position: absolute;transform: translate(0,100px);transition: 1s;}
+
+
+
+        /* 图片样式 */
+        .list .list-p img{width: 100%;}
+        /* 右文档 */
+        .list .list-text{ float: left;width: 114px;font-size: 12px;line-height: 21px;margin-top: 10px;}
+
+
+
+        .list li:hover .list-p-box{transform: translate(0,0) rotate(0);}
+        .list li:hover .list-p-text{transform: translate(0,0);}
+    </style>
+</head>
+<body>
+    <ul class="list">
+        <li>
+            <div class="list-p">
+                <img src="./图片/u=2002449736,2865293314&fm=26&gp=0.jpg" alt="">
+                <div class="list-p-box"></div>
+                <div class="list-p-text">测试文字</div>
+            </div>
+            <div class="list-text">
+                <p>测试文字测试文字测试文字测试文字</p>
+            </div>
+        </li>
+        <li>
+            <div class="list-p">
+                <img src="./图片/u=2002449736,2865293314&fm=26&gp=0.jpg" alt="">
+                <div class="list-p-box"></div>
+                <div class="list-p-text">测试文字li:hoverli:hover</div>
+            </div>
+            <div class="list-text">
+                <p>测试文字测试文字测试文字测试文字</p>
+            </div>
+        </li>
+        <li>
+            <div class="list-p">
+                <img src="./图片/u=2002449736,2865293314&fm=26&gp=0.jpg" alt="">
+                <div class="list-p-box"></div>
+                <div class="list-p-text">测试文字</div>
+            </div>
+            <div class="list-text">
+                <p>测试文字测试文字测试文字测试文字</p>
+            </div>
+        </li>
+        <li>
+            <div class="list-p">
+                <img src="./图片/u=2002449736,2865293314&fm=26&gp=0.jpg" alt="">
+                <div class="list-p-box"></div>
+                <div class="list-p-text">测试文字</div>
+            </div>
+            <div class="list-text">
+                <p>测试文字测试文字测试文字测试文字</p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

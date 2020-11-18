@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <H1><strong>表格属性</strong></H1> 
+   <!-- 
+    border  表格边框,接收数值为表格边框宽度
+
+    cellpadding  单元格之内的空间，接收数值为单元格大小
+
+    cellspacing  单元格之间的空间、接收数值为单元格之间的空间大小
+    
+    rowspan  合并列，写在td表格单元中，表示此列占据多少列的位置
+    colspan  写在表th中第一行，写在表格头，表示此行占据多少行的位置
+    
+    align    左右对齐方式
+    valign   上下对齐方式
+
+    上top,下bottom，右right，左left
+    -->
+   
+    <table border="1" cellpadding="30" cellspacing="2"> 
+            <caption>天气预报</caption>
+    <tHead>  
+         <tr align="right">
+             <th  colspan="2">日期</th>
+             <th>天气情况</th>
+             <th>出行情况</th>
+        </tr>
+    </tHead> 
+    <tBody>
+        <tr  valign="top">
+            <td rowspan="2">2019.1.1</td>
+            <td>白天</td>
+            <td>正在下雨</td>
+            <td>天气晴朗</td>
+           
+        </tr>
+        <tr>
+            <td>夜晚</td>
+            <td>正在下雨</td>
+            <td>下雨中</td>
+         </tr>
+     </tBody>  
+     <tBody>
+            <tr valign="bottom">
+                <td rowspan="2">2019.1.2</td>
+                <td>白天</td>
+                <td>正在下雨</td>
+                <td>天气晴朗</td>
+
+            </tr>
+       
+      <tr>
+                <td>夜晚</td>
+                <td>正在下雨</td>
+                <td>下雨中</td>
+             </tr>
+         </tBody>             
+     </table>
+</body>
+</html>

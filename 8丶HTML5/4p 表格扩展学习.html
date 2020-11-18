@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{empty-cells: hide;border-collapse: collapse;}
+        table .line{border-top: 50px solid aquamarine;border-left: 150px solid  seagreen ;position: relative;color: black}
+        em{position: absolute;bottom: 20px;left: -50px;}
+        span{position: absolute;top: -30px;left: -130px;}
+        
+    </style>
+</head>
+<body>
+    <!--
+        border-collapse:collapse   添加单线
+
+        empty-cells:hide           隐藏空单元
+
+        border / rotate            斜线分类
+
+        colgroup / col             列分组
+      -->
+    <table border="1"cellpadding="0" cellspacing="1"> 
+        <caption>天气预报</caption>
+        <colgroup>
+            <col span="2" style="background-color: brown;">
+            <col span="2" style="background-color: chartreuse;">
+        </colgroup>
+     <tr>
+         <th colspan="2">
+             <div class="line">
+                <em>日期</em>
+                <span>时间</span>
+             </div>
+         </th>
+         <th>天气情况</th>
+         <th>出行情况</th>
+    </tr>
+    <tr>
+        <td>2019.1.1</td>
+        <td><img src="./图片/快捷.jpg" alt="天气提示"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2019.1.1</td>
+        <td><img src="./图片/快捷.jpg" alt="天气提示"></td>
+        <td>下雨中</td>
+     </tr>       
+    </table>
+    
+</body>
+</html>

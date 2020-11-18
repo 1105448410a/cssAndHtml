@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1{width: 200px;height: 200px;background-color: aquamarine;opacity: 0.3;}
+        #div2{width: 200px;height: 200px;background-color: rgba(255, 0, 0, 0.3);
+            cursor: grabbing;          
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        透明度：opacity（针对整体）
+
+            1（透明）-- 0（半透明） 
+            0.1 0.2 0.3（不同的透明程度）
+            就算透明任然占空间
+
+            块中的字体（或其他的子内容也会透明）
+            想子内容不透明，需要用到rgba
+            例如 rgba(255, 0, 0, 0.3)
+     -->
+     <div id="div1">这是一个块</div>
+     <div id="div2">这是一个块</div>
+     <!-- 
+        手势： cursor     自定义鼠标样式
+            defaukt :默认
+            其他的值可以自行查阅
+            也可以自定义 格式如cursor: url(./img/cursor.ico);  
+      -->
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       /*复合样式和单一样式选择一种去写*/
+       /*如果一定要写两种，先写复合再写单一*/
+
+       /*复合样式*/
+        /*写法，通过空格*/
+        /*背景边框各个属性空格隔开，与顺序无关*/
+        /*例如font 字体需要一定顺序*/
+        div{
+            width: 600px;height: 300px;
+            /*背景的复合写法*/
+            background: red url(./图片/11.jpg ) no-repeat center center;
+
+            border: skyblue 20px solid;
+
+            /*最少要需要两个值（size-字体大小 family-字体），并且保证先写size，再写family*/
+
+            /*正确顺序*/
+            /*weight style size/line-height family*/
+            /*      加粗-斜体-大小/行高-字体类型    */
+            font: 900 italic 30px 宋体 ;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 
+        复合样式
+        background 背景
+
+        border 边框
+
+        font 字体
+     -->
+     <div>你真的好帅</div>
+
+</body>
+</html>

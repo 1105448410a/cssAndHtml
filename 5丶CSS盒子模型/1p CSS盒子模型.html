@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 30px;height: 30px;background: red; border: 90px blue  solid;
+            padding-left: 20px;
+           
+        }
+
+        #box2{
+            width: 30px;height: 30px;background: blueviolet; border: 9px seagreen  solid;
+            padding-left: 20px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        CSS盒子模型组成：
+        content -> padding -> border -> margin
+          内容      填充物     包装盒    盒子与盒子间距
+
+        content : 内容区域 width 和 height 组成
+
+        padding : 内边距（内填充）        
+            只写一个值 : padding-left: 60px 单一指定上下左右
+                padding-lift
+                padding-right
+                padding-top
+                padding-bottom
+            写两个值 : 30px 90px （上下，左右）
+            写四个值 : 30px 30px 30px 30px (上右下左)
+
+
+        margin : 外边距（外填充）
+            只写一个值 : margin-left: 60px 单一指定上下左右
+                margin-lift
+                margin-right
+                margin-top
+                margin-bottom
+            写两个值 : 30px 90px （上下，左右）
+            写四个值 : 30px 30px 30px 30px (上右下左)
+
+
+        注意事项：
+            1.背景颜色会填充到margin以内的区域
+                （
+                    margin的颜色不受背景色影响
+                ）
+            2.文字会在content的区域
+            3.padding不能出现负值，margin是可以出现负值
+
+     -->
+     <div id="box">你好</div>
+     <div id="box2"><img src="./图片/42166d224f4a20a4746af4de9b529822720ed0b7.png" alt=""></div>
+     
+     
+</body>
+</html>

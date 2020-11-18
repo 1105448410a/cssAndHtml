@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #parent{border: 10px black solid;overflow: hidden;}
+        #box1{float: left;width: 100px;height: 200px;background-color: red;}
+        #box2{float: right;width: 100px;height: 100px;background-color: blue;}
+
+        #prent{border: 10px black solid;overflow: hidden;}
+        #bx1{width: 100px;background-color: red;margin-bottom: -2000px;padding-bottom: 2000px;float: left;}
+        #bx2{width: 100px;background-color: blue;margin-bottom: -2000px;padding-bottom: 2000px;float: right;}
+       
+
+    </style>
+</head>
+<body>
+    <p>等高布局可以使左边红色方块变高的同时 右边蓝色方块也一起变高</p>
+    <div id="parent">
+        <div id="box1"></div>
+        <div id="box2"></div>
+    </div>
+    <p>等高布局 利用margin负值与padding实现</p>
+    <div id="prent">
+        <div id="bx1">
+            <p>AAAA</p>
+            <p>AAAA</p>
+            <p>AAAA</p>
+            <p>AAAA</p>
+            <p>AAAA</p>
+            <p>AAAA</p>
+            <p>AAAA</p>
+            <p>AAAA</p>
+            <p>AAAA</p>
+            <p>AAAA</p>
+        </div>
+        <div id="bx2">
+
+        </div>
+    </div>
+
+</body>
+</html>

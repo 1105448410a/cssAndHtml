@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  
+        表单数据传输
+        method          数据传输方式
+
+        enctype         数据传输类型
+        application/x-www-form-urlencoded 字符串
+        multipart/form-data     
+        text/plain
+
+
+        name/value      数据的键值对
+    -->
+    <!-- 需要在一个服务器环境中进行 先了解 -->
+    <!-- GET -->
+    <form action="data.php" method="GET" enctype="multipart/form-data">    
+        <input type="text" name="username">
+        <!-- 例如这个  后台根据username去找输入端中的输入数据 -->
+        <input type="submit">
+    </form>
+
+    <!-- POST -->
+    <form action="data.php" method="POST" enctype="text/plain">    
+        <input type="text" name="username">
+        <!-- 例如这个  后台根据username去找输入端中的输入数据 -->
+        <input type="submit">
+    </form>
+</body>
+</html>

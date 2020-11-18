@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <table border="2" cellpadding="10" cellspacing="2" >
+    <tr>
+        <th>样式</td>
+        <th>引入方式</th> 
+    </tr>
+    
+    <tr>
+        <td>内联样式</td>
+        <td>sytle属性</td>
+    </tr>
+
+    <tr>
+        <td>内部样式</td>
+        <td>sytle标签</td>
+    </tr>
+    </table>
+     
+    <p>
+        内联样式:在div标签中直接加入style属性,通过style属性进行变更样式
+    </p>
+    <div style="background-color: seagreen;width: 200px;height: 100px;float: left;color: magenta;margin: auto;">这是一个块</div>
+    <!-- 
+        
+        color表示字体颜色
+        background-color表示颜色
+        width:宽度
+        height:高度
+        text-align:center居中
+        float:靠左或靠右
+     -->
+    <p>内部样式:在头标签中加入style标签，通过div{}进行变更样式</p>
+    <p>区别</p>
+    <ul>
+        <li>内部样式的代码可以复用，复合W3C的规范标准,尽量让结构和样式分开处理</li>
+    </ul>
+
+</body>
+</html>

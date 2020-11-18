@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{width: 300px;height: 300px;border: 1px solid black;background: url(./图片/u=1053927615,3988657563&fm=26&gp=0.jpg) no-repeat;background-size: cover;}
+        .box2{width: 300px;height: 300px;border: 1px solid black;background: url(./图片/u=1053927615,3988657563&fm=26&gp=0.jpg) no-repeat;background-size: contain;}
+        .box3{width: 300px;height: 300px;border: 40px solid rgba(0, 0, 0, 0.5);background: url(./图片/u=1053927615,3988657563&fm=26&gp=0.jpg) no-repeat;padding: 30px;}
+        .box4{width: 300px;height: 300px;border: 40px solid rgba(0, 0, 0, 0.5);background: url(./图片/u=1053927615,3988657563&fm=26&gp=0.jpg) no-repeat;padding: 30px;background-origin: border-box;}
+        .box5{width: 300px;height: 300px;border: 40px solid rgba(0, 0, 0, 0.5);background: url(./图片/u=1053927615,3988657563&fm=26&gp=0.jpg);padding: 30px;background-origin: border-box;}
+        .box6{width: 300px;height: 300px;border: 40px solid rgba(0, 0, 0, 0.5);background: url(./图片/u=1053927615,3988657563&fm=26&gp=0.jpg);padding: 30px;background-origin: border-box;background-clip: content-box;}
+    </style>
+</head>
+<body>
+    <!-- 
+        CSS3提供的扩展背景样式
+
+        background-size: 背景图的尺寸大小
+            cover     覆盖
+            contain  包含
+
+        background-origin : 背景图的填充位置
+            padding box 默认
+            border-box
+            content-box
+
+        background-clip : 背景图的剪裁方式
+            padding box 默认
+            border-box
+            content-box
+    -->
+    <p>cover覆盖 等比放大  直至图片将父容器全部沾满</p>
+    <div class="box1"></div>
+    <p>contain包含 等比放大 直至图片全部显示的最大大小</p>
+    <div class="box2"></div>
+
+    <p>背景图填充位置 padding box</p>
+    <div class="box3"></div>
+    <p>背景图填充位置 border box</p>
+    <div class="box4"></div>
+
+    <p>背景图剪裁方式 在border位置裁切</p>
+    <div class="box5"></div>
+    <p>背景图剪裁方式 在contain位置裁切</p>
+    <div class="box6"></div>
+</body>
+</html>

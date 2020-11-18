@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{border: 2px black solid;}
+        #box1{width: 200px;height: 200px;background-color: blue;float: left}
+        #box2{width: 400px;height: 400px;background-color: red;}
+        #box3{width: 200px;height: 200px;background-color: blue;float: right;}
+        #box4{width: 400px;height: 400px;background-color: red;}
+    </style>
+</head>
+<body>
+    <!-- 
+        文档流
+            文档流是文档中可显示对象在排列时所占用的位置
+            （块标签从上到下，内联标签从左到右）
+
+        float特性
+            加浮动的元素，会脱离文档流
+            会沿着父容器靠左靠右排列
+            如果之前已经有浮动的元素，会挨着浮动的元素进行排列
+            加了float的元素不会影响正常的元素，只有浮动元素才可以影响浮动元素
+
+            float取值：
+                left 沿着父容器向左
+                right  沿着父容器向右
+                none（默认）
+
+        
+     -->
+
+     <div id="box1">浮动向右盒子1</div>
+     <div id="box2">不浮动盒子2</div>
+
+     <div id="box3">浮动向右盒子三</div>
+     <div id="box4">浮动向右盒子四</div>
+</body>
+</html>

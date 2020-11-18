@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{width: 300px;height: 300px;border: 2px black solid;margin: 30px auto;}
+        .box2{width: 100px;height: 100px;background-color: blue;transition: 1s;}
+        .box1:hover .box2{transform: translate(100px,0);}
+
+        .box3{width: 300px;height: 300px;border: 2px black solid;margin: 30px auto;}
+        .box4{width: 100px;height: 100px;background-color: blue;transition: 1s;}
+        .box3:hover .box4{transform: scale(0.7);}
+    </style>
+</head>
+<body>
+    <!-- 
+        transform 变形
+
+            translate 位移
+                也可以
+                translateX x轴
+                translateY y轴
+                translateZ z轴（3D中的内容）   
+                
+            scale  缩放
+                值是比例值 正常大小为1 为2就放大一倍 为0.5缩小一倍
+                scaleX        
+                scaleY        
+                scaleZ        
+            
+     -->
+
+
+     <div class="box1">
+         <div class="box2"></div>
+     </div>
+
+     <div class="box3">
+        <div class="box4"></div>
+    </div>
+
+
+</body>
+</html>

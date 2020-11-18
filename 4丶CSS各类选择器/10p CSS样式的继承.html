@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{font-size: 32px;width: 500px;height: 500px;border: 4px red solid;}
+
+        /*使p标签继承父标签的border样式*/
+        p{border: inherit;}
+        
+    </style>
+</head>
+<body>
+    <!-- 
+        继承：（默认）当前标签可以获得父标签关于字体相关的样式，单不能获得布局相关的样式
+        （也可以通过设置inherlt进行继承关于布局的样式）
+
+
+        文字相关的样式可以继承
+
+        布局相关的样式不能继承
+     -->
+     <div>
+        <p>你好</p>
+     </div>
+</body>
+</html>

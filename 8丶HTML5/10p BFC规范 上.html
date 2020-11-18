@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{width: 200px;min-height: 200px;background-color: blue;margin-bottom: 50px;}
+
+        #div2{width: 100px;height: 100px;background-color: red;margin-top: 50px;}
+
+        .box{overflow: hidden;}
+
+        #dv1{width: 200px;overflow: hidden; border: 2px black solid;}
+
+        #dv2{width: 100px;height: 100px;background-color: red;float: left;}
+    </style>
+</head>
+<body>
+    <!--     
+        触发BFC规范的元素  可以形成一个独立的容器 不受到外界的影响  从而解决一些布局问题
+
+
+        触发的样式：
+            float display position overflow
+     -->
+     <!-- 下实例为BFC解决margin问题 -->
+     <div>
+         <div id="div1"></div>
+     </div>
+
+     <div>
+         <div id="div2"></div>
+     </div>
+
+     <div class="box">
+        <div id="div1"></div>
+    </div>
+
+    <div class="box">
+        <div id="div2"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <!-- 解决margin值传递问题 -->
+    <div id="dv1"> 
+        <div id="dv2"></div>
+    </div>
+    <hr>
+    <!-- 方法同上 不做赘述 -->
+</body>
+</html>

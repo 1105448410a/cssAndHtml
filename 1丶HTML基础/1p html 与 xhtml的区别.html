@@ -1,0 +1,34 @@
+html与xhtml的区别
+
+
+<!-- DOCTYPE文档编码不同 -->
+    html简单  xhtml复杂  
+    因为原来html的文档解析内部实现不一样
+
+
+<!-- 元素大小写 -->
+    html  div  DIV都可以
+    xhtml 只可以div  不可以大写
+
+
+<!-- 属性布尔值 -->
+    html  <input type="checkbox" checked>
+        此时默认checked默认是选中
+    xhtml  <input type="checkbox" checked="checked">
+        必须写值
+
+<!-- 属性引号 -->
+    html中  属性值可以不加引号  <div title=hello></div>
+    xhtml 属性值必须加引号 <div title="hello"></div>
+
+<!-- 图片的alt属性 -->
+    html中  <img src="">可以
+    xhtml  <img src="" alt=""> 必须加alt
+
+<!-- 单标签写法 -->
+    html 单标签 不用写斜线 <input type="text">
+    xhtml 单标签 必须斜线结束 <input type="text"/>
+
+<!-- 双标签闭合 -->
+    html可以<div> 只写一个
+    xhtml 双标签必须闭合 <div></div>

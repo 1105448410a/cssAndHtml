@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 没有清除浮动 */
+        #box1{width: 200px;height: 200px;background-color: red;float: left;}
+        #box2{width: 400px;height: 400px;background-color: blue;}
+
+        /* 清除了浮动 */
+        #box3{width: 200px;height: 200px;background-color: red;float: left;}
+        #box4{width: 400px;height: 400px;background-color: blue;clear: left;}
+
+        /* 嵌套 */
+        #box5{width: 400px;background-color: sandybrown;border: 1px solid black;}
+        #box6{width: 200px;height: 200px;background-color: red;float: left;}
+        .clear:after{content: '';display: block;clear: both;}
+    </style>
+</head>
+<body>
+    <!-- 
+        清除浮动     
+            clear属性 表示清除浮动的
+            clear: 方向（常用both 清除所有方向）;
+     -->
+     <div id="box1"></div>
+     <div id="box2"></div>
+     <div id="box3"></div>
+     <div id="box4"></div>
+     <!-- 
+        嵌套排列
+
+      -->
+
+      <div id="box5" class="clear">
+          <div id="box6"></div>
+      </div>
+</body>
+</html>

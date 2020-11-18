@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{border: 2px black solid;}
+        #box1{width: 200px;height: 200px;background-color: blue;}
+        #box2{width: 400px;height: 400px;background-color: red;float: left;}
+        #box3{width: 500px;height: 500px;background-color: blueviolet;}
+        #box4{background-color: chartreuse;float: left;}
+    </style>
+</head>
+<body>
+    <!--
+        一丶只会影响后边的元素,对之前的元素不造成任何影响
+
+        二丶内容默认提升半层，float元素会高于正常元素，字体也是高于正常元素
+
+        三丶默认宽根据内容决定 box4
+
+        四丶换行排列 当浮动的元素在父容器中放不下时（宽度），会换行 自动进入下一行
+
+        五丶主要给块元素添加 但也可以给内联元素添加
+
+    -->
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4">这是一个没有宽度的块</div>
+
+
+</body>
+</html>

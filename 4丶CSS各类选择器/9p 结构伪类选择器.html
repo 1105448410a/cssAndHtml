@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /*
+    :nth-of-type()
+        括号中填入数字，相同便签中第几个标签获得样式（从1开始），也可以填入n，表示从0到无穷大，2n表示2.4.6.2n，2n+1则为1 3 5 7 9
+    
+    :first-of-type
+    :last-of-type
+    :only-of-type
+        first是第一个标签获得样式，last是最后一个获得样式，only,必须唯一的标签才会获得样式
+    
+    
+    nth-of-type() 和  nth-child() 之间的区别
+
+    一个是第几个相同标签，一个是第几个孩子标签
+    
+    */
+    li:nth-of-type(3){background: red;}
+    li:first-of-type{background: green;}
+    li:last-of-type{background: hotpink;}
+
+    li:nth-child(2){background: blue;}
+    </style>
+</head>
+<body>
+   
+    <ul>
+        <li></li>
+        <li></li>
+        <a href="">ss</a>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+</body>
+</html>

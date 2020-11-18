@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width: 600px;height: 400px;border: 1px solid black;margin: 30px auto;
+            /* 分栏宽度  个数是有冲突的 只用一个 */
+            column-count: 3;
+            column-width: 100px;
+
+            column-rule: 1px black dashed;
+            
+        }
+        h2{column-span: all; text-align: center;}
+    </style>
+</head>
+<body>
+    <!--  
+        column-count 分栏个数
+
+        column-width  分栏宽度
+
+        column-gap    分栏间距
+
+        column-rule   分栏边线
+        
+        column-span   合并分栏
+    -->
+
+    <div class="box">
+        <h2>应对疫情 畜禽产品如何保供稳价？</h2>
+
+        <p>受新冠肺炎疫情冲击，畜禽产品的供应和价格一度出现波动。如何让百姓吃上“平价肉”、如何让养殖户紧张的资金链得到缓解？19日，在国务院联防联控机制新闻发布会上，相关部门对此披露了权威信息。</p>
+
+        <p>受非洲猪瘟疫情与新冠肺炎疫情因素叠加影响，猪肉价格出现波动。统计数据显示，2月份CPI同比上涨5.2%，而猪肉价格上涨拉动了其中约3.2个百分点。</p>
+
+        <p>去年以来，我们多次投放了中央冻猪肉储备，今年春节假期过后又连续6周投放，本周还将继续投放。”彭绍宗说，针对新冠肺炎疫情影响，对于重点地区如武汉及湖北其他地市，安排了2万吨的应急储备，已先期将2000吨调运在武汉的中央储备仓库。
+        </p>
+
+        <p>我们监测到的36个大中城市超市、集贸市场，以精瘦肉这个品种为例，平均零售价格到3月18日已降到每斤32.21元，比2月中旬的最高点34.63元下降了2块多钱。”彭绍宗说，通过密集投放储备肉，这期间猪肉市场价格在相对高位保持平稳态势，特别是最近一个多月以来，价格虽然还在高位，但连续回落，这一个月降幅达到了7%以上。</p>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{background-color: aquamarine; display: inline;}
+        /* 通过display改变了div的显示框类型 变为inline 不会再各自占一行 */
+        span{width: 200px;height: 200px;display: block;background-color: black;}
+         /* 通过display改变了div的显示框类型 变为block 将独自占据一行，并且可以拥有宽高属性 */
+         input{display: none;}
+         /* 隐藏 也就是不显示 */
+         /* 
+            display none 与 visibility hidden 的区别
+            display不占空间，隐藏时等于没有不存在
+            visibility hidden占空间  即使不显示，块所占的位置任然会占着空间
+         */
+         #box1{width: 200px;height: 200px;background-color: blue;visibility: hidden;}
+         #box2{width: 200px;height: 200px;background-color: blue;}
+    </style>
+</head>
+<body>
+    <!-- 
+        显示框类型 display
+     -->
+     <!-- block 块 -->
+     <!-- inline 内联 -->
+     <!-- block-inline 内联块 -->
+     <!-- none 隐藏 -->
+
+     <div>块二 block</div>
+     <div>块一 block</div>
+     <span>内联一</span>
+     <span>内联二</span>
+     <input type="text">
+
+     
+     <div id="box1">块二 block</div>
+     <div id="box2">块一 block</div>
+</body>
+</html>

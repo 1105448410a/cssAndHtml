@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*例如列表属性,使用后代可以使Ul和ol中的li拥有不同的样式*/
+        /*也就是所有的后代都拥有该样式*/
+    #list li{background: red;border: 2px blue solid;}
+
+        /*使用父子，则只能使当前子代拥有样式，子代的子代不拥有*/
+    #ol1 > li{background: red;border: 2px blue solid;}
+        
+        /*使用兄弟，则使兄标签之后的所有弟标签拥有样式*/
+    
+    div~h2{background: red;border: 2px blue solid;}
+    
+        /*使用相邻，则之后相邻的第一个拥有选定标签拥有样式*/
+    p+div{background: red;border: 2px blue solid;}
+
+    </style>
+
+        
+    
+</head>
+<body>
+    <!-- 
+        层次选择器
+
+        后代：M N
+
+        父子：M>N
+
+        兄弟：M~N
+
+        相邻：M+N
+     -->
+
+     <ul id="list">
+        <li>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+        </li>
+        <li></li>
+        <li></li>
+     </ul>
+
+     <ol id="ol1">
+         <li>
+             
+            <ol>
+                 <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+         </li>
+         <li></li>
+         <li></li>
+     </ol>
+     <h2>div之上的H2</h2>
+     <div>块1</div>
+     <h2>div之后的H2</h2>
+     <h2>div之后的H2</h2>
+     
+     <div>p之上第二个</div>
+     <div>p之上第一个</div>
+     <p>我是相邻p标签</p>
+     <div>p之下第一个</div>
+     <div>p之下第二个</div>
+</body>
+</html>

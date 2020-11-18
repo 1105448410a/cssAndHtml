@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS文件创建.css">
+    <style>
+        div{color: red;}
+        div{color: royalblue;}
+    </style>
+</head>
+<body>
+    <!-- 
+        相同样式优先级
+            当设置相同样式时，后设置的样式优先级较高，但是不
+            推荐出现重复样式设置的情况
+
+
+        内部样式与外部样式
+            内部样式与外部样式优先级相同，如果设置了相同的样式，那么后写入的引入方式优先级高
+
+        单一样式优先级
+            style行间(在标签内直接写style属性)>           
+            id(唯一标签加样式-2p)            > 
+            class(给一个类别标签加样式-3p)    > 
+            tag(给一个标签全体加样式)         > 
+            *（给所有的标签加样式-4p）        > 
+            继承(inherit)
+     -->
+     <div>hellow world</div>
+</body>
+</html>

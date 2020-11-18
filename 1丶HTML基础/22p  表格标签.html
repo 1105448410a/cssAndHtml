@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        <table> 表格的最外层容器
+        <tr>    定义表格行
+        <th>    定义表格头
+        <td>    定义表格单元
+        <caption>   定义表格标题
+     -->
+     <!-- 
+         语义化标签
+         <tHead>只能出现一次
+         <tBody>可以出现多次
+         <tFood>只能出现一次
+      -->
+     <table> 
+            <caption>天气预报</caption>
+    <tHead>  
+         <tr>
+             <th>日期</th>
+             <th>天气情况</th>
+             <th>出行情况</th>
+        </tr>
+    </tHead> 
+    <tBody>
+        <tr>
+            <td>2019.1.1</td>
+            <td><img src="./图片/快捷.jpg" alt="天气提示"></td>
+            <td>天气晴朗</td>
+        </tr>
+    </tBody>
+    <tBody>
+        <tr>
+            <td>2019.1.1</td>
+            <td><img src="./图片/快捷.jpg" alt="天气提示"></td>
+            <td>下雨中</td>
+         </tr>
+     </tBody>        
+     </table>
+</body>
+</html>

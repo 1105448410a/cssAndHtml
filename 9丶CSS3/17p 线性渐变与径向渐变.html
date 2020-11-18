@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{width: 300px;height: 300px;border: 1px solid black;
+        
+        /* to 方向(也可以用角度 deg),颜色,颜色,颜色 */
+        /* 渐变的0度在页面下边 正值会按照顺时针旋转 */
+        /* 百分号可以控制渐变色在某些位置之前不渐变 */
+        background-image: linear-gradient(to right bottom, red 25%,orange 25%,yellow);
+        }
+        .box2{width: 300px;height: 300px;border: 1px solid black;
+        background-image: radial-gradient( red 25%,orange 25%,yellow);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        linear-gradient  线性渐变
+            point || angle
+            color
+            percentage
+
+        radial-gradient  径向渐变
+            point
+            color
+            percentage
+     -->
+     <p>线性渐变</p>
+     <div class="box1"></div>
+     <p>径向渐变</p>
+     <div class="box2"></div>
+     
+
+</body>
+</html>

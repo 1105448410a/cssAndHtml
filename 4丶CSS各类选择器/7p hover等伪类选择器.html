@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*
+        （只能添加给 a 标签）
+        :link           访问前的样式
+
+        :visited        访问后的样式
+        
+        
+        （可以给所有的标签）
+        :hover          鼠标移入时的样式
+
+        :active         鼠标按下时的样式
+
+            如果想要给a标签加上所有的伪类，要按照lvha顺序
+            一般只给a标签设置hover样式
+        */
+      
+       /*访问前是红色*/
+       a:link{background: red;}
+
+       /*访问后是黄色*/
+       a:visited{background: yellow;}
+       
+       /*鼠标移入时是绿色*/
+       a:hover{background: green;}
+       
+       /*鼠标长按时是紫色*/
+       a:active{background: hotpink;}
+       
+
+
+        div{width: 200px;height: 200px; background: red;}
+        
+        /*:hover*/
+        /*鼠标移入前为红色，移入后为蓝色*/
+        div:hover{background: blue;}
+       
+        /*:active*/
+        /*鼠标移入后按下不抬起变为绿色*/
+        div:active{background: green;}
+
+        p.sss{background: red;}
+
+        p.sss:hover{background: blue;}
+    </style>
+</head>
+<body>
+   
+    <div></div>
+    <a href="www.baidu.com" target="_blank">这是一个链接</a>
+
+    <p class="sss">你好帅</p>
+</body>
+</html>

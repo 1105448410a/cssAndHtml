@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="www.xxx.com" method="get">
+        <!-- 
+            --1.action 属性的作用是表示向何处发送数据
+
+            --1.method 属性的作用是规定如何发送数据 常用值有get | post（较为常用）
+         -->
+
+        <input type="text" name="11" value="" size="" maxlength="" checked>
+         <!-- 
+            --1.type表示表单元素的类型           
+
+            --2.name表示表单元素的名字
+
+            --3.value表示表单元素初始值
+
+            --4.size指定表单元素的初始宽度。当 type 为 text 或 password时，表单元素的大小以字符为单位。对于其他类型，宽度以像素为单位
+
+            --5.maxlength表示表单元素可输入的最大值(txt,password)
+
+            --6.checked表示初始已选中
+          -->
+
+
+        <h4>表单元素类型详解</h4>
+       
+        <!-- txt 文本框 -->
+        <input  type="text"(文本框)  name="userName"(文本框名称) value="用户名"(文本框初始值) size="60"(文本框长度) maxlength="20"(文本框可输入最多字符) />
+
+        <!-- password  密码框 -->
+        <input  type="password "(密码框)  name="pass"(密码框的名称)  size="20"(密码框的长度) />
+
+        <!-- radio  单选框 -->
+        <input name="gen" type="radio"(单选按钮框) value="男"(值)  checked(单选按钮选中状态) />男
+        <input name="gen" type="radio" value="女" />女
+
+        <!-- checkbox  多选框 -->
+        <input type="checkbox"(复选框) name="interest" value="sports"(值)/>运动
+        <input type="checkbox" name="interest" value="talk" checked(复选框选中状态) />聊天
+        <input type="checkbox" name="interest" value="play"/>玩游戏
+
+        <!-- select  列表框 -->      
+        <select(列表框) name="列表名称" size="行数">
+        <option value="选项的值" selected="selected"(默认选中项)>1111</option >
+        <option(选项) value="选项的值">222</option >
+        </select>
+
+        <!-- reset submit button 按钮 -->
+        <input type="reset" (重置按钮) name="butReset"  value="reset按钮"(按钮上显示的文字)>
+        <input type="submit"(提交按钮) name="butSubmit" value="submit按钮">
+        <input type="button"(普通按钮) name="butButton" value="button按钮"/>
+        <!-- 图片按钮 -->
+        <input type="image" src="images/login.gif"/(图片路径)>
+
+        <!-- texttarea  多行文本域 -->
+        <textarea(多行文本域)  name="showText"  cols="x"(显示的列数)  rows="y"(显示的行数)>文本内容 </textarea>
+
+        <!-- 文件域 -->
+        <form action="" method="post" enctype="multipart/form-data"（表单编码属性）>
+        <p><input type="file"(文件域) name="files" />
+        <input type="submit" name="upload" value="上传" /></p>
+        </form>
+
+        <!-- 邮箱 -->
+        <p>邮箱:<input type="email"（邮箱）  name="email"/></p>
+        <input type="submit"/>
+
+        <!-- 网址 -->        
+        <p>请输入你的网址:<input type="url"（网址）  name="userUrl"/></p>
+        <input type="submit"/>
+
+        <!-- 数字 -->
+        <p>请输入数字:<input type="number"(数字)  name="num" min="0"(允许的最小值) max="100"(允许的最大值) step(合法的数字间隔)="10"/></p>
+        <input type="submit"/>
+
+        <!-- 滑块 -->
+        <p>请输入数字:<input type="range"(滑块)  name="range1" min="0"(允许的最小值) max="10"(允许的最大值) step(合法的数字间隔)="2"/></p>
+        <input type="submit"/>
+
+        <!-- 搜索框 -->    
+        <p>请输入搜索的关键词:<input type="search"(搜索框)  name="sousuo"/></p>
+        <input type="submit"/>
+    </form>
+</body>
+</html>

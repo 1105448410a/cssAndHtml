@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        datalist             选项列表
+        
+        details / summary    文档细节 / 文档标题 
+
+        progress / meter     定义进度条 / 定义度量范围
+
+        time                 定义日期或者时间
+
+        mark                 带记号的文本
+
+     -->
+     <!-- 选项列表 -->
+     <input type="text" list="elems">
+     <datalist id="elems">
+         <option value="aawwe"></option>
+         <option value="afsqw"></option>
+         <option value="asdc"></option>
+         <option value="adwewewew"></option>
+     </datalist> 
+
+     <!-- 详情 -->
+    <details>
+        <summary>HTML</summary>
+        <p>超文本标记语言</p>
+    </details>
+
+    <!-- 进度条 -->
+    <!-- 主要表示进度 -->
+    <progress min="0" max="10" value="5"></progress>
+
+    <!-- 度量 -->
+    <!-- 主要表示度量 -->
+    <meter min="0" max="10" value="5" low="1" high="8"></meter>
+
+    <!-- 日期 时间 -->
+    <p>今天是<time title="2.14">情人节</time>  人很多</p>
+    
+    <!-- 标记 -->
+    <p>今天是<mark>情人节</mark>  人很多</p>
+</body>
+</html>

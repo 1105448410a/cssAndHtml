@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box1{width: 200px;height: 200px;background-color: blueviolet;margin-bottom: 80px;}
+        #box2{width: 200px;height: 200px;background-color: royalblue;margin-top: 80px;}
+        /* 此处，box1的下margin是80,box2的top也是80，但是不叠加，只取上下中较大的值 */
+    </style>
+</head>
+<body>
+    <!-- 
+        margin叠加问题
+            当上下两个盒子同时添加上下外边距的时候，就会出现叠加问题，这个问题只有上下游，左右是没有这个叠加问题的。
+     -->
+     <div id="box1"></div>
+     <div id="box2"></div>
+     
+</body>
+</html>

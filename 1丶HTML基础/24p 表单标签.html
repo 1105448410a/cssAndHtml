@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册页面</title>
+    <style>
+    body{background-color: darkgray;}
+    </style>
+</head>
+<body>
+    <!-- action是表单最终提交到的位置  -->
+    <div style="height: 100px;"></div>
+    <div style="text-align: center;margin:0 auto;background-color: firebrick;width: 1000px;">
+        <form action="http://www.baidu.com">
+        <fieldset>
+         <legend>注册表</legend>   
+        <!-- imput标签用于建立一个用户可输入数据的输入框，type属性则控制输入的数据，例如Txt就是文本,password就会出现星号隐藏 -->
+        <!-- imput标签有 placeholder属性,可在空白文本输入框中显示内容-->
+        <h4>请输入账户</h4>
+        <input type="text" placeholder="空白框中显示">
+        <h4>请输入密码</h4>
+        <input type="password">
+        <h4>请确认密码</h4>
+        <input type="password">
+        <!-- type属性若输入checkbox，则会出现可多选的框 -->
+        <h4>爱好(可多选)</h4>
+        <input type="checkbox">学习
+        <input type="checkbox">游戏
+        <input type="checkbox">运动
+
+        <h4>对于毕业后的期望(单选)</h4>
+        <!-- type属性若输入radio，则会出现只能单选的框，多个需要选择的单选框需要用name属性变为一组 -->
+        <!-- 添加一个checked属性，则刚开始就会默认被选中 --> 
+        <p><input type="radio" name="1" checked>毕业后选择考研</p>
+        <p><input type="radio" name="1">毕业后直接寻找工作</p>
+        <p><input type="radio" name="1">仍在考虑</p>
+
+        <p>
+            <select name="cars" id="">
+                <option value="111">111</option>
+                <option value="222">222</option>
+                <option value="333">333</option>
+                <option value="444">444</option>
+            </select>
+
+        </p>
+        
+        <!-- 若需要上传文件，则在type属性输入file -->
+        <h4>上传照片</h4>
+        <input type="file" value="照片">
+        <!-- 若需要提交按钮和重置按钮，则在type属性输入submit reset -->
+        <h4>确认无误请提交</h4>
+        <input type="submit">
+        <h4>重置已输入内容</h4>
+        <input type="reset">
+    </fieldset>
+</form>
+</div>
+</body>
+</html>
+

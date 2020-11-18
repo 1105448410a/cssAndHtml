@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1{font-family: Arial;}
+        #div2{font-family:宋体;}
+        
+    </style>
+</head>
+<body>
+    <!--     
+        font-family 字体类型
+
+        英文字体
+        Arial 'Times New Roman'
+
+        中文字体 温软雅黑  'Microsoft YaHei'
+                宋体 SimSun
+     -->
+
+     <!-- 
+        同样字体存在衬线体与非衬线体
+
+        例如宋体为衬线体，微软雅黑为非衬线体
+
+        现在使用非衬线体比较多（微弱雅黑）
+
+      -->
+
+      <!-- 
+        设置多字体
+        font-family:宋体,微软雅黑
+        网页是否识别字体，是根据电脑上是否存在该字体，在电脑上没有字体时，会自动往后进行识别，例如宋体不识别，→微软雅黑
+
+        可以在控制面板-字体 中查看已有字体进行设置
+
+       -->
+
+     <div>Asia</div>
+     <div id="div1">Asia</div>
+
+     <div>这是一段文字</div>
+     <div id="div2">这是一段文字</div>
+     <div style="font-family: 微软雅黑;">这是一段文字</div>
+
+</body>
+</html>

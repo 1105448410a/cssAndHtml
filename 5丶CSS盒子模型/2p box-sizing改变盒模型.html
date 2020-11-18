@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    #box{
+        width: 200px;height: 200px;background-color: blue;
+        border: 10px blueviolet solid;
+        padding: 60px 50px;
+        box-sizing: content-box;
+    }
+
+
+    #box2{
+        width: 200px;height: 200px;background-color: blue;
+        border: 10px blueviolet solid;
+        padding: 60px 50px;
+        box-sizing: border-box;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <!-- 
+        box-sizing（盒尺寸)
+            box-sizing允许您以特定的方式匹配某个区域的特定元素，取值为content-box(默认值)|border-box
+            --也就是改变盒子模型的展示形态
+
+            正常时，wight,height一般作用于content
+            当使用了box-sizing时，也可以作用于border
+     -->
+
+     <div id="box">你好帅</div>
+     <div id="box2">你好帅</div>
+
+</body>
+</html>

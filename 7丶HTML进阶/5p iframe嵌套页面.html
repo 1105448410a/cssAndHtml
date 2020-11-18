@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        iframe{width: 100%;}
+    </style>
+</head>
+<body>
+    <!-- 
+        iframe元素会创建包含另一个文档的内联框架  
+            在一个已有的页面中嵌入另一个页面
+
+     -->
+    <!-- 
+        一些常用属性
+        frameborder 1 or 0是否显示框架周围的边框
+
+        width，height 定义宽高
+
+        scrolling   no 是否在iframe中显示滚动条
+
+        src  在iframe中引入的URL
+
+        srcdoc  在iframe中显示的页面内容 与src同时存在 只显示第一个
+     -->
+
+     <iframe src="http://www.taobao.com" frameborder="1" scrolling="no" width="600px"
+     height="600px"></iframe>
+     
+     <iframe srcdoc="hellowoder" src="" frameborder="0"></iframe>
+</body>
+</html>

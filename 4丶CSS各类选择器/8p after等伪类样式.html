@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /*
+     通过伪类的方式给元素添加一些文本内容
+        :after 
+        在添加标签中的内容后边添加内容,使用 属性content="添加内容",并且可以为该内容添加其他样式
+    
+        :before
+        在添加标签中的内容之前添加内容， 使用属性content="添加内容",并且可以为该内容添加其他样式
+    */
+
+    div:after{content: "word"; color: rosybrown;background: red;}
+    div:before{content: "hello";}
+
+   
+    /*
+    针对表单元素的伪类
+        :checked
+        使用:checked伪类，则使表单元素在被选择后变为伪类checked的样式
+
+
+        :disabled
+        使用:checked伪类，则使表单元素中不能被操作的元素变为伪类checked的样式
+
+
+        :focus
+        使用focus伪类，则是需要获取光标的表单元素（例如input text 中的文本框，在被点击后），在获取光标后变为focus伪类的样式
+        
+    */
+    :checked{background: red;width: 100px;height: 100px;}
+    :disabled{width: 50px;height: 50px;}
+    :focus{background: red;}
+    </style>
+</head>
+<body>
+    <div>你好啊</div>
+    <form action="">
+
+        <input type="checkbox" name="快乐">
+        <input type="checkbox" name="快乐">
+        <input type="checkbox" name="快乐">
+
+        <input type="text">
+
+    </form>
+</body>
+</html>

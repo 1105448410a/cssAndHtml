@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{width: 100px;height: 100px;background-color: red;}
+        .box2{width: 100px;height: 100px;background-color: red;transition:2s ;}
+        .box3{width: 100px;height: 100px;background-color: red;transition:2s ;}
+
+        .box2:hover{transform: translate(100px,0) scale(0.5);}
+        .box3:hover{transform: scale(0.5) translate(100px,0);}
+
+   
+
+    </style>
+</head>
+<body>
+    <!-- 
+        1.变形元素不会影响别的元素
+
+        2.变形操作只能添加给块元素 不能添加给内联
+
+        3.复合写法 可以同时添加多个变形操作
+            执行有顺序 先执行后边的操作 再执行前边的操作
+            translate会受到rotatel scale skew的影响
+
+        4.transform-origin 基点的位置
+            x  
+            y 
+            z(3D)
+
+     -->
+
+     <div class="box1">1参考</div>
+     <div class="box2">2</div>
+     <div class="box3">3</div>
+
+</body>
+</html>

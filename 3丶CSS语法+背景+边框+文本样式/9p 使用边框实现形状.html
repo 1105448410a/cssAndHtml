@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div2 {
+            width: 0px;
+            height: 0px;
+            border-top-color: black;
+            border-top-width: 30px;
+            border-top-style: solid;
+            border-bottom-color: red;
+            border-bottom-width: 30px;
+            border-bottom-style: solid;
+            border-left-color: fuchsia;
+            border-left-width: 30px;
+            border-left-style: solid;
+            border-right-color: orangered;
+            border-right-width: 30px;
+            border-right-style: solid;
+        }
+        
+        #div1{  
+            width: 0px;
+            height: 0px;
+            border-top-color: white;
+            border-top-width: 30px;
+            border-top-style: solid;
+            border-bottom-color: white;
+            border-bottom-width: 30px;
+            border-bottom-style: solid;
+            border-left-color: white;
+            border-left-width: 30px;
+            border-left-style: solid;
+            border-right-color: orangered;
+            border-right-width: 30px;
+            border-right-style: solid;}
+
+            
+            #div3 {
+            width: 0px;
+            height: 0px;
+            border-top-color: transparent;
+            border-top-width: 30px;
+            border-top-style: solid;
+            border-bottom-color: transparent;
+            border-bottom-width: 30px;
+            border-bottom-style: solid;
+            border-left-color: transparent;
+            border-left-width: 30px;
+            border-left-style: solid;
+            border-right-color: transparent;
+            border-right-width: 30px;
+            border-right-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div2"></div>
+    <p>边框的角是拼接的，所以可以利用这个特点实现三角形</p>
+    <h1>方法一</h1>
+    <p>设置一个div块，宽高0*0，直接设置某一条边颜色不同于背景色，其他边为与背景色同色实现边框即为三角形</p>
+    <div id="div1"></div>
+    
+    <h1>方法二</h1>
+    <p>或者使用透明色</p>
+    <div id="div3"></div>
+    <div style="width: 240px;height: 1000px;margin:0 auto;">
+    
+        <div style="width: 0px;height: 0px;   border-top-color: transparent;
+        border-top-width: 60px;
+        border-top-style: solid;
+        border-bottom-color: red;
+        border-bottom-width: 60px;
+        border-bottom-style: solid;
+        border-left-color: transparent;
+        border-left-width: 60px;
+        border-left-style: solid;
+        border-right-color: transparent;
+        border-right-width: 60px;
+        border-right-style: solid;float: left;"></div>
+      <div style="width: 0px;height: 0px;   border-top-color: transparent;
+      border-top-width: 60px;
+      border-top-style: solid;
+      border-bottom-color: red;
+      border-bottom-width: 60px;
+      border-bottom-style: solid;
+      border-left-color: transparent;
+      border-left-width: 60px;
+      border-left-style: solid;
+      border-right-color: transparent;
+      border-right-width: 60px;
+      border-right-style: solid;float: right;"></div>
+   
+    
+    <div style="width: 0px;height: 0px;   border-top-color: red;
+    border-top-width: 120px;
+    border-top-style: solid;
+    border-bottom-color:transparent;
+    border-bottom-width: 120px;
+    border-bottom-style: solid;
+    border-left-color: transparent;
+    border-left-width: 120px;
+    border-left-style: solid;
+    border-right-color: transparent;
+    border-right-width: 120px;
+    border-right-style: solid;float: right;"></div>
+
+    
+    <p style="text-align: center;color: red;">崔若楠我爱你</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{width: 100px;height: 100px;background-color: red;position: relative;left: 100px;top: 100px;}
+        #box2{width: 100px;height: 100px;background-color: blue;position: relative;}
+        #box3{width: 100px;height: 100px;background-color: gold;}
+    </style>
+</head>
+<body>
+    <!-- 
+        position 定位 
+            特性 css position属性用于指定一个元素在文档中的定位方式，top right bottom left属性决定了元素的最终位置
+
+
+        position取值 
+            static  默认静态定位
+            relative   相对定位
+            absolute   绝对定位
+            fixed      固定定位
+            sticky     粘性定位
+     -->
+
+
+     <!-- 
+        relative 相对定位
+            如果没有定位偏移量，对元素本身没有任何影响(box2) 
+            不使元素脱离文档流(box1)(元素原本位置已经被占)
+            不影响其他元素布局(box2)
+            lefy top right bottom是相对于当前元素自身进行偏移的(偏移方向相对于自身 right就是向左动)（元素00点是本身）
+        
+      -->
+      <div id="box1"></div>
+      <div id="box2"></div>
+      <div id="box3"></div>
+</body>
+</html>

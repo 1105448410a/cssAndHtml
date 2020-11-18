@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #box1{width: 200px;height: 200px;background-color: teal;}
+    #box2{width: 200px;height: 200px;background-color: red;}
+    #c1{width: 200px;height: 200px;background-color: teal;}
+    #c2{width: 200px;height: 200px;background-color: red;}
+     </style>
+</head>
+<body>
+    <!-- 
+        打开网页，右键进入检查，右下角display可以查看标签的类型
+
+        按照类型分类
+        一丶block（块）
+            例如 div  p  ul  li  h1..
+            特性：
+                1.独占一行
+                2.支持所有的样式
+                3.不写宽时，与父容器的宽度相同
+                4.所占区域是一个矩形
+
+        二丶inline（内联）
+            例如 span a em strong img（比较特殊）..
+            特性：
+                1.挨在一起，不是独占一行
+                2.不支持有些样式（比如weight,height等等）
+                3.不写宽的时候，宽度由内容决定
+                4.所占的区域，不一定是矩形
+                5.内联标签之间会有空隙，原因是代码中换行产生的，如果代码两个span写在一行就没有空隙了
+       
+        三丶inline-block（内联块）
+            例如 input select...
+            特性：
+                （同时具备块与内联的某些样式）
+                1.挨在一起
+                2.支持宽高
+
+
+
+        注：
+        1.布局一般使用块标签
+        2.文本修饰一般使用内联标签  
+     -->
+
+     <div></div>
+     <span></span>
+     <input type="text">
+
+     <div id="box1"></div>
+     <div id="box2"></div>
+
+     <span id="c1">内联1</span>
+     <span id="c2">内联2</span>
+</body>
+</html>
